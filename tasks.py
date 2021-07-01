@@ -53,3 +53,96 @@
 #
 # print(add_values(2, 4))
 # print(subtract_values(4, 2))
+
+# 11. Declare a dictionary with three shopping items with cost, eggs £1.20, milk £2.30, bread £1.00
+#     Write a function that returns the total value
+# shopping = {"eggs": 1.2, "milk": 2.3, "bread": 1.0}
+#
+#
+# def total_value():
+#     return sum(shopping.values())
+#
+#
+# print(total_value())
+#
+# # OR
+#
+#
+# def total_value():
+#     return shopping["eggs"] + shopping["milk"] + shopping["bread"]
+#
+#
+# print(total_value())
+
+# 12. Prompt the user to enter an integer, declare a function that checks if the number is odd or even and display back
+# to the user with the message "The number is odd/The number is even"
+
+# num = input("Please enter an integer:  ")
+#
+# def check_odd(num):
+#     if int(num) % 2 == 0:
+#         print(f"{num} is even.")
+#     else:
+#         print(f"{num} is odd.")
+#
+#
+# check_odd(num)
+
+# 13. select the correct syntax
+# 1 -super.__init().
+# 2- super()__init().
+# 3 super().__init().
+# 4 - super().__init__()
+# super().__init__()
+
+# 14. Declare a tuple with 3 values of your choice, iterate through the tuple and display the values
+
+# my_tuple = ("this", "is", 5)
+# for x in my_tuple:
+#     print(x)
+
+# 15. Delete the last index of the tuple
+# YOU CAN'T because they are immutable
+
+# 16. Create a class called student with one method called student data that returns studentname
+#     Create a class called DevOps student which inherits the Student class and print student name
+# class Student:
+#     def student_data(self):
+#         return "Filipe"
+#
+# class DevOpsStudent(Student):
+#     def __init__(self):
+#         super().__init__()
+#
+#
+# ds = DevOpsStudent()
+# print(ds.student_data())
+
+# 17. Declare a variable called city, declare a method that takes city as argument and value of the city as London and
+# method check if value is London, then true or false
+
+# city = "London"
+#
+#
+# def check_city_name(city1):
+#     if city1 == "London":
+#         return True
+#     else:
+#         return False
+#
+#
+# print(check_city_name(city))
+
+# 18. import sys module, import math and with math print the random method
+#     create a function with 2 args, calculates the percentage of 2 args
+# import sys
+# import math
+# import random
+#
+#
+# def percentage(num1, num2):
+#     return (num1 * 100) / num2
+#
+#
+# print(percentage(random.randint(1, 100), random.randint(1, 100)))
+
