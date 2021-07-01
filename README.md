@@ -38,12 +38,14 @@ shopping_list.append("tuna")  # add tuna to the end of the list
 shopping_list.pop(3)  # delete item with index 3
 ```
 - Lists can have multiple data types mixed (int, strings, bool, ...)
+- Allow duplicates, also ordered
 
 ### Tuples
 
 - Create tuple - `essentials = ("paracetamol", "milk", "butter")`
 - Tuples are IMMUTABLE, you can't change the date inside.
 - `essentials.pop(2)` Will throw an ERROR because you can't delete data from tuples
+ Allow duplicates, also ordered
 
 ### Dictionaries
 
@@ -53,13 +55,14 @@ shopping_list.pop(3)  # delete item with index 3
     "completed_lessons": 4,
   "completed_lesson_names": ["data types", "git and github", "operators", "Lists and Tuples"]}`
 - dict = {'KEY': 'value', ...}
-- No duplicates
+- No duplicates, ordered
 ```python
 print(student_1["stream"])  # Get Value of 'stream' KEY
 print(student_1.get("stream")) # Get Value of 'stream' KEY
 print(student_1["completed_lesson_names"][-2]) # Print the second last index of key completed_lesson_names
 
 student_1["new_key"] = "new value" # Add key/value pair to dict
+student_1["Name"].append("Filipe") # Add new value to an empty key
 student_1["completed_lessons"] = 3 # Update
 student_1["completed_lesson_names"].remove("operators") # Delete
 student_1["completed_lesson_names"].pop("operators") # Delete
