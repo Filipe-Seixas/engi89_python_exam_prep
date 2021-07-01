@@ -191,4 +191,88 @@ fruits = ["apple", "banana", "cherry"]
 my_function(fruits)
 ```
 
-## Object Oriented Programming
+## Object-Oriented Programming
+
+```python
+class MyClass: # Create a class
+  x = 5
+  
+p1 = MyClass() # Create an object of the class
+print(p1.x) # We can now call the variable that was inside the class, but from the object instead of the class
+```
+
+### init()
+
+- All classes have a function called `__init__()`, which is always executed when the class is being initiated.
+- Use the `__init__()` function to assign values to object properties, or other operations that are necessary to do when the object is being created.
+
+```python
+class Person:
+  def __init__(self, name, age):  # init to initialise our class
+    self.name = name
+    self.age = age
+
+  def myfunc(self):  # This is a method that belongs to the object
+    print("Hello my name is " + self.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+```
+- The `__init__()` function is called automatically every time the class is being used to create a new object.
+- The `self` parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
+### Inheritance
+
+- Inheritance allows us to define a class that inherits all the methods and properties from another class.
+- Parent class is the class being inherited from, also called base class.
+- Child class is the class that inherits from another class, also called derived class.
+
+```python
+class Person:  # PARENT CLASS
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+#Use the Person class to create an object, and then execute the printname method:
+
+x = Person("John", "Doe")
+x.printname()
+
+class Student(Person): # CHILD CLASS
+  def __init__(self, fname, lname):
+```
+- The child's `__init__()` function overrides the inheritance of the parent's __init__() function.
+
+```python
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+```
+- **`super()` makes the child class inherit all the methods and properties from its parent**
+
+```python
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year  # To add another variable, we should add a new parameter as well in the init function (year)
+
+  def welcome(self):  # we can also add methods and use the variables in the init func
+    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+```
+
+## Modules
+
+- `import` is the keyword that is used to import any module available in python.org
+```python
+import math
+import random
+
+num1 = 23.44 # Float
+
+print(math.ceil(num1)) # = 24
+print(math.floor(num1)) # = 23
+print(random.random())
+```
