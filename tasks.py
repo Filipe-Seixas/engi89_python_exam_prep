@@ -23,6 +23,12 @@
 #    Can the element of tuple be different types? Yes.
 
 # 6. Create a dictionary with key value firstname and lastname
+# dict = {'firstname': "Filipe", 'lastname': "Silva"}
+# print(type(dict))
 
-dict = {'firstname': "Filipe", 'lastname': "Silva"}
-print(type(dict))
+# 7. Add a course key to dict
+# dict['course'] = 'devops'
+# print(dict)
+
+# 8. Print value of lastname
+# print(dict['lastname'])
