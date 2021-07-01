@@ -7,9 +7,9 @@
 
 # 2. Declare a list with number 1 - 5. Iterate through the list and display the list
 
-list_1 = [1, 2, 3, 4, 5]
-for x in list_1:
-    print(x)
+# list_1 = [1, 2, 3, 4, 5]
+# for x in list_1:
+#     print(x)
 
 # 3. AND - && & == Which one returns a bool value?
 # ==
@@ -18,4 +18,11 @@ for x in list_1:
 # A list is mutable, and is defined with []
 # A tuple is immutable, and is defined with ()
 
-# 5.
+# 5. Can we add an element to a list? Yes.
+#    Can we add an element to a tuple? No.
+#    Can the element of tuple be different types? Yes.
+
+# 6. Create a dictionary with key value firstname and lastname
+
+dict = {'firstname': "Filipe", 'lastname': "Silva"}
+print(type(dict))
