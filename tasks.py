@@ -32,3 +32,11 @@
 
 # 8. Print value of lastname
 # print(dict['lastname'])
+
+# 9. Create a class called student, initialise the class and create an object of the class
+# class Student:
+#     def __init__(self):
+#         pass
+#
+#
+# student = Student()
