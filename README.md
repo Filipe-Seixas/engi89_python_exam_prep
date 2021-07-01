@@ -59,8 +59,10 @@ print(student_1["stream"])  # Get Value of 'stream' KEY
 print(student_1.get("stream")) # Get Value of 'stream' KEY
 print(student_1["completed_lesson_names"][-2]) # Print the second last index of key completed_lesson_names
 
+student_1["new_key"] = "new value" # Add key/value pair to dict
 student_1["completed_lessons"] = 3 # Update
 student_1["completed_lesson_names"].remove("operators") # Delete
+student_1["completed_lesson_names"].pop("operators") # Delete
 
 # Built in methods to use in dicts
 print(student_1.keys())  # keys() gets all the key names
@@ -91,3 +93,102 @@ thisset.remove("banana") # remove banana from set
 thisset.discard("banana") # remove banana from set but if banana doesn't exist in set, don't throw error
 thisset.clear() # clear set
 ```
+
+## If, Elif, Else
+
+- CHECK FOR `:` AT THE END OF `IF` AND `ELSE`
+- CHECK FOR INDENTATION
+
+```python
+if weather == "sunny":  # If this condition is true, the code below if statement will execute
+    print("Enjoy the weather")
+elif weather == "rainy":  # Else, if the weather is "rainy" run the code below
+    print("Take an umbrella")
+else:  # If other statements are false, run else block of code
+    print("Thank you for checking the weather")
+```
+
+### Operators
+- Equals: `a == b`
+- Not Equals: `a != b`
+- Less than: `a < b`
+- Less than or equal to: `a <= b`
+- Greater than: `a > b`
+- Greater than or equal to: `a >= b`
+- And `and` Or `or`
+
+### Writing if statements in one line
+```python
+if 5 > 2:
+  print("Five is greater than two!")
+# OR
+if 5 > 2: print("Five is greater than two!")
+
+if 5 > 2:
+  print("Yes")
+else:
+  print("No")
+# OR
+print("Yes") if 5 > 2 else print("No")
+```
+
+## While Loops
+
+- Execute a set of statements as long as a condition is true.
+- Break to stop loop before condition is met
+
+```python
+i = 1
+while i < 6:  # keep looping until i < 6
+  print(i)
+  if i == 3:
+    break  # stop loop when i = 3
+  i += 1
+
+while True:  # Infinite loop
+  print(i)
+```
+
+## For Loops
+
+- Used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:  # Iterate over a list
+  print(x)
+
+for x in "banana":  # Iterate over a String
+  print(x)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+# Output: apple
+#         banana
+```
+
+## Functions
+
+- A function is a block of code which only runs when it is called.
+- You can pass data, known as parameters, into a function.
+- Makes reusable code
+
+```python
+def my_function(): # Create function
+  print("Hello from a function")
+
+my_function()  # Call function
+
+def my_function(food):  # Passing a list as one argument
+  for x in food:
+    print(x)
+
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)
+```
+
+## Object Oriented Programming
