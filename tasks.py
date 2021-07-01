@@ -40,3 +40,16 @@
 #
 #
 # student = Student()
+
+# 10. Create two functions that take two arguments each, function 1 called add_values, function 2 called subtract_values
+# and return the addition and subtraction
+# def add_values(num1, num2):
+#     return num1 + num2
+#
+#
+# def subtract_values(num1, num2):
+#     return num1 - num2
+#
+#
+# print(add_values(2, 4))
+# print(subtract_values(4, 2))
